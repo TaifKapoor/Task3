@@ -1,21 +1,25 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Signup from './components/Signup'
-import Login from './components/Login'
-import Dashboard from './components/Dashboard'
+import Nav from './components/Nav'
+import Hero from './components/Hero'
+import About from './components/About'
+import Project from './components/Project'
+import Skills from './components/Skills'
+import Education from './components/Education'
+import CTA from './components/CTA'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <Router>
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-        <Routes>
-          <Route path='/signup' element={<Signup />}/>
-          <Route path='/login' element={<Login />}/>
-          <Route path='/' element={<Login />}/>
-          <Route path='/dashboard' element={<Dashboard />}/>
-        </Routes>
-      </div>
-    </Router>
+    <>
+      <Nav/>
+      <Hero/>
+      <About/>
+      <Project/>
+      <Skills/>
+      <Education/>
+      <CTA/>
+      <Footer/>
+    </>
   )
 }
 
